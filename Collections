@@ -1,0 +1,142 @@
+Shraddha Jayaraman10:23 AM
+1. boolean add (Object o) -
+2. boolean addAll(Collection c) -
+3. boolean remove(Object o) -
+4. boolean removeAll(Collection c) -
+5. boolean retainAll(Collecion c) -
+6. void clear() -
+7. boolean contains(Object 0) -
+8. boolean containsAll(Collection c) -
+9. boolean isEmpty() -
+10. int size() -
+11. Object[] toArray() -
+12. Iterator iterator() - 
+Shraddha Jayaraman10:25 AM
+Methods a list uses
+1. void add(int index, Object o)
+2. boolean addAll(int index, Collection c)
+3. Object get(int index)
+4. Object remove(int index)
+5. Object set(int index, Object new) – to replace the element present at the specified index with provided Object and returns the old object
+6. int indexOf(Object o) – returns index of the first occurence of ‘o’.
+7. int lastIndexOf(Object o) – returns index of the last occurence of ‘o’
+8. ListIterator listIterator()
+Shraddha Jayaraman10:29 AM
+New Capacity = (current capacity *3/2) + 1
+ArrayList l = new ArrayList(int capacity) 
+ArrayList l = new ArrayList (Collection c) 
+Shraddha Jayaraman10:30 AM
+Arrays.asList(item) – converting arrays to AL
+List.toArray() - converting Al to arrays
+Shraddha Jayaraman10:36 AM
+List l = Collections.synchronizedList(al);
+public static List synchronizedList(List l )
+Shraddha Jayaraman10:37 AM
+public static Set synchronizedSet(Set s);
+public static Map synchronizedMap (Map m);
+Shraddha Jayaraman10:48 AM
+1. HashSet hs = new HastSet() - default initial capacity = 16
+default fill ratio or load factor = 0.75
+After loading how much factor ,a new HashSet object will be created, that factor is called as load Factor.
+2. HashSet hs = new HashSet(int capacity) – creates hashSet with given initial capacity but the same default fill ratio
+3. HashSet hs =new HashSet(int capacity, float loadFactor)
+4. HashSet hs = new HashSet(Collection c) – for the given collection, create a hashSet object.
+Shraddha Jayaraman10:53 AM
+Object first()
+Object last()
+SortedSet headSet(Object o)
+SortedSet tailSet(Object o)
+SortedSet subSet(Object o1, Object o2)
+Comparator comparator() - returns comparator object that returns underlying sorting technique, if we are using DNSO then we will get null.
+Shraddha Jayaraman10:58 AM
+TreeSet t = new TreeSet();
+t.add(new StringBuffer(“A”));
+t.add(new StringBuffer(“Z”));
+t.add(new StringBuffer(“B”));
+Sysout(t);
+Shraddha Jayaraman11:00 AM
+RE:ClassCastException
+TreeSet t = new TreeSet();
+Shraddha Jayaraman11:01 AM
+Comparable vs Comparator
+Shraddha Jayaraman11:03 AM
+only one method
+public int compareTo(Object o) – 
+obj1.compareTo(obj2)
+returns -ve value if obj1 comes before obj2
+returns +ve value iff obj1 comes after obj2
+returns 0 iff obj1 and obj2 are equal
+e.g. sysout(“A”.compareTo(“B”)) - -ve because A appears before B
+Comparator 
+2 methods
+public int compare(Object o1, Object o2)
+returns -ve iff o1 comes before o2
+returns +ve iff o1 comes after o2
+returns 0 iff o1 and o2 are equal
+public boolean equals()
+Shraddha Jayaraman11:06 AM
+TreeSet t = new TreeSet();
+t.add("A”);
+t.add("Z”);
+t.add(“B”);
+Sysout(t); // [A,B,Z]
+Shraddha Jayaraman11:18 AM
+TreeSet t = new TreeSet();
+t.add(null);
+t.ad("B");
+Shraddha Jayaraman11:29 AM
+Map Methods
+Object put (Object key, Object val) – to add one key value pair to the map. If the key is already present, then old value will be replaced with new value and returns old value.
+If new key is added, null is returned.
+Void putAll(Map m) – to add a group of key value pairs
+Object get(Object key) – returns the value associated with specified key
+Object remove(Object key) – removes the entry associated with specified key
+Boolean containsKey(Object key) – checkes whether the specified key 
+Collection Views of MAp
+Set keySet()
+Collection values()
+Set entrySet()
+Shraddha Jayaraman11:41 AM
+Methods on Entry Object
+Methods (can be applied only on Entry object)
+Object getKey()
+Object getValue()
+Object setValue(Object o)
+Shraddha Jayaraman11:43 AM
+Consructors in HashMAp
+HashMap hm = new HashMap() - creates an empty HashMap with default initial capacity = 16 and default fill ratio = 0.75
+HashMap hm = new HashMap(int initialCapacity) 
+HashMap hm = new HashMap(int initialCapacity, float fillRatio)
+HashMap hm = new HashMap(Map m)
+Shraddha Jayaraman12:00 PM
+Properties p = new Properties();
+Cursors
+
+1. Enumeration (I)
+2. Iterator (I)
+3. ListIterator(I)
+Shraddha Jayaraman12:04 PM
+Enumeration e = v. Elements();
+methods - 
+1. public boolean hasMoreElements()
+2. public Object nextElement()
+Methods
+1. public boolean hasNext()
+2. public Object next()
+3. public void remove()
+Shraddha Jayaraman12:09 PM
+Listterator ltr = l.listIterator();
+l is any list object.
+1. public boolean hasNext()
+2. public Object next()
+3. public int nextIndex()
+Above methods are meant for forward direction
+4. public boolean hasPrevious()
+5. public Object previous()
+6. public int previousIndex()
+Above 3 methods are for backward movement.
+Shraddha Jayaraman12:11 PM
+7. public void remove()
+8. public void set(Object o)
+9. public void add(Object o)
+Java Trained Interns Meet
